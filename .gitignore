@@ -1,2 +1,2 @@
-*.mov
-*.MP4
+/dji_fly_*.mov
+/dji_fly_*.MP4
