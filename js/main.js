@@ -11,12 +11,11 @@
     });
   }
 
-  // Conditional hero video loading: skip entirely on mobile or reduced-motion
+  // Conditional hero video loading: skip only when reduced-motion is requested
   var video = document.getElementById("heroVideo");
   if (video) {
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    var isNarrow = window.matchMedia("(max-width: 768px)").matches;
-    if (!reduceMotion && !isNarrow) {
+    if (!reduceMotion) {
       var source = video.querySelector("source[data-src]");
       if (source) {
         source.src = source.getAttribute("data-src");

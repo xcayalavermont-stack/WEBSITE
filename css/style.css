@@ -250,15 +250,15 @@ img { max-width: 100%; display: block; }
 }
 .about-intro-text { flex: 1; min-width: 0; }
 .about-photo {
-  width: 220px;
-  height: 220px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 4px;
   flex-shrink: 0;
 }
 @media (max-width: 768px) {
   .about-intro { flex-direction: column; }
-  .about-photo { width: 160px; height: 160px; }
+  .about-photo { width: 100px; height: 100px; }
 }
 
 /* ---- About page media ---- */
