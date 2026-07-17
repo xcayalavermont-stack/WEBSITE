@@ -241,6 +241,26 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
 }
 
+/* ---- About page intro (headshot + opening bio) ---- */
+.about-intro {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.about-intro-text { flex: 1; min-width: 0; }
+.about-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  .about-intro { flex-direction: column; }
+  .about-photo { width: 160px; height: 160px; }
+}
+
 /* ---- About page media ---- */
 .about-media {
   border-radius: 2px;
