@@ -11,19 +11,24 @@
     });
   }
 
-  // Conditional hero video loading: skip only when reduced-motion is requested
+  // Hero video: respect reduced-motion; otherwise nudge autoplay as a fallback
+  // for browsers/devices that ignore the autoplay attribute on first paint.
   var video = document.getElementById("heroVideo");
   if (video) {
     var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!reduceMotion) {
-      var source = video.querySelector("source[data-src]");
-      if (source) {
-        source.src = source.getAttribute("data-src");
-        video.load();
+    if (reduceMotion) {
+      video.pause();
+      video.removeAttribute("autoplay");
+    } else {
+      var tryPlay = function () {
         video.play().catch(function () {
           /* autoplay can be blocked; poster image remains visible */
         });
-      }
+      };
+      tryPlay();
+      document.addEventListener("visibilitychange", function () {
+        if (!document.hidden && video.paused) tryPlay();
+      });
     }
   }
 })();
