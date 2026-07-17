@@ -16,7 +16,7 @@
 - Colors: primary deep pine-green `#1E4342`, near-black ink `#12201F`, warm ivory `#F6F1EA`, brass accent `#B08D57`. (spec: Visual System)
 - Type: serif display (Playfair Display) for headlines, humanist sans (Inter) for body/UI. (spec: Visual System)
 - No literal nautical clip-art; restrained, boardroom-serious layout. (spec: Visual System)
-- Hero video source: `dji_fly_20260609_102026_41_1781015198306_video (2).mov`, trimmed ~12–15s, H.264 1080p, muted, looping, `autoplay playsinline`, dark-green gradient overlay for text contrast. (spec: Video Treatment)
+- Hero video source: `dji_fly_20260609_102026_41_1781015198306_video.mov`, used in full (36.7s, per explicit request), H.264 1080p, muted, looping, `autoplay playsinline`, dark-green gradient overlay for text contrast. (spec: Video Treatment, updated post-launch)
 - About page video: `dji_fly_20260610_111206_42_1781105848928_video (1).mov`, trimmed ~6–8s, showing the "ARCADIA — St. George, ME" transom, smaller inline visual not full-bleed. (spec: Video Treatment)
 - Video hero must fall back to a static poster image on mobile viewports and when `prefers-reduced-motion` is set. (spec: Video Treatment / Technical Build)
 - Raw `.mov`/`.MP4` source files stay untouched in the project root; only compressed derivatives go in `assets/video/`. (spec: Video Treatment)

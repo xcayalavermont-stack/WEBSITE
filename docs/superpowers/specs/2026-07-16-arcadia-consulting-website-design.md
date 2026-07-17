@@ -37,7 +37,7 @@ Static multi-page site, shared header/footer markup across all pages, mobile nav
 
 ## Video Treatment
 
-- **Hero clip**: `dji_fly_20260609_102026_41_1781015198306_video (2).mov` (44s source) — reviewed frame samples show a wide, dramatic tracking angle with open sky/negative space in the upper frame, ideal for overlaid headline text. Trimmed to ~12–15s, compressed to H.264 1080p (target ~3–6MB), muted, looping, `autoplay playsinline`. Dark green gradient overlay (`#12201F` → transparent) ensures headline text contrast.
+- **Hero clip**: `dji_fly_20260609_102026_41_1781015198306_video.mov` (36.7s source, used in full per explicit request rather than trimmed) — a dramatic tracking angle with open sky/negative space, ideal for overlaid headline text. Compressed to H.264 1080p (~20MB), muted, looping, `autoplay playsinline`. Dark green gradient overlay (`#12201F` → transparent) ensures headline text contrast.
 - **Mobile / reduced-motion**: video hero replaced with a static poster frame (extracted still) on small viewports and when `prefers-reduced-motion` is set, to save data and respect accessibility preference.
 - **About page**: `dji_fly_20260610_111206_42_1781105848928_video (1).mov` (15s source) — shows the "ARCADIA — St. George, ME" transom nameplate clearly. Trimmed to ~6–8s, compressed the same way, used as a smaller inline visual rather than a full-bleed hero.
 - **Source footage**: the 8 raw `.mov`/`.MP4` files stay in the project root untouched as originals; only compressed derivatives are written into the site's `assets/video/` folder.
